@@ -1,0 +1,125 @@
+.about {
+  padding-bottom: 135px;
+
+  &-inner {
+    display: flex;
+  }
+
+  &-wrap {
+    width: 100%;
+    margin-top: 22px;
+  }
+
+  &-btns {
+    display: flex;
+    position: relative;
+    margin-bottom: 73px;
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: #ECECEC;
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      bottom: -22px;
+    }
+  }
+
+  &__btn {
+    font-weight: 600;
+    font-size: 28px;
+    color: #C2C2C2;
+    background-color: transparent;
+    position: relative;
+
+    &:hover {
+      color: $orange;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 120%;
+      position: absolute;
+      bottom: -23px;
+      background-color: transparent;
+      z-index: 9;
+    }
+
+    &:not(:last-child) {
+      margin-right: 90px;
+    }
+
+    &:last-child {
+      &::after {
+        width: 140%;
+        left: -20px;
+      }
+    }
+  }
+
+  &__btn.active {
+    color: $black;
+
+    &::after {
+      background-color: $orange;
+    }
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    padding-left: 20px;
+  }
+
+  &__list.options {
+    max-width: 990px;
+  }
+
+  &__list li {
+    display: list-item;
+    margin-bottom: 15px;
+
+    &::marker {
+      color: $orange;
+    }
+  }
+
+
+
+  &-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  &-sert {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+    row-gap: 34px;
+  }
+
+  &-testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+    row-gap: 25px;
+  }
+}
+
+.tabs__content {
+
+  h4 {
+    padding-top: 20px;
+  }
+}
+
+.tabs__content.active {
+  display: block;
+}

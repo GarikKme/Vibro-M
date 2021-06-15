@@ -1,0 +1,87 @@
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer-wrap">
+            <div class="footer-wrap__logo">
+                <a href="index.html">
+                    <img src="images/footer-logo.svg" alt="footer logo">
+                </a>
+            </div>
+            <ul class="footer-wrap__menu">
+                <li><a href="catalog.html">Каталог продукции</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+            <div class="footer-socials">
+                <a href="https://vk.com/" target="_blank">
+                    <img src="images/vk.png" alt="vkontakte">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <svg width="9" height="21" viewBox="0 0 9 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.6">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.75 0C8.75 0 8.47658 0 7.29167 0C4.67123 0 2.90528 1.61719 2.91667 4.5V7.49999H0V10.5H2.90528L2.91667 21H5.83334V10.5H8.31251L8.75 7.49999H5.83334V4.92188C5.83334 3 6.66705 3 8.05503 3H8.75V0Z"
+                                fill="white" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-wrap__contacts">
+                <div class="footer-wrap__contacts-box">
+                    <a href="tel:+78129856969" class="footer-wrap__contacts-box-phone">+7 (812) 985-69-69 </a>
+                </div>
+                <button class="footer-btn">Заказать звонок</button>
+            </div>
+        </div>
+        <div class="footer-copyrights">
+            <p>ВИБРО-М © 1999-2021. Все права защищены</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal window -->
+<div class="box-modal" id="exampleModal" style="display: none;">
+    <div class="box-modal_close arcticmodal-close">
+        <div class="close-button">
+            <img src="images/close.svg" alt="close">
+        </div>
+    </div>
+    <form action="success.php" method="POST" class="form modal-form js-form" id="popupResult">
+        <h3 class="form__title">
+            Заказать обратный звонок
+        </h3>
+        <p class="form__text">
+            Оставьте Ваши контактные данные
+            и мы перезвоним Вам в ближайшее время!
+        </p>
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Введите Ваше имя">
+        </div>
+        <div class="form-group">
+            <input type="tel" class="form-control" name="tel" placeholder="Телефон">
+        </div>
+        <button class="form__btn button" data-submit>Отправить заявку</button>
+        <div class="form-check">
+            <label class="form-check-label check">
+                <input class="form-check-input check" type="checkbox" name="checkbox" value="true" checked>
+                <span class="check__box"> </span>
+                Я принимаю условия <a href="#">пользовательского соглашения</a></label>
+        </div>
+    </form>
+</div>
+<!-- Индикация процесса отправки формы -->
+<div id="loader">
+    <img src="images/ripple.gif" alt="loader">
+</div>
+<!-- Сообщение "спасибо" после отправки формы -->
+<div id="overlay">
+    <div id="thx">
+        <div class="close-button">
+            <img src="images/close.svg" alt="close">
+        </div>
+        <h4>Спасибо!<br> Ваша заявка отправлена</h4>
+    </div>
+</div>
+
+<!-- JS Scripts -->
+<script src="js/main.js"></script>

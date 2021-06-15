@@ -1,0 +1,44 @@
+.catalog {
+  padding-bottom: 110px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  &-products__item {
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 15px 30px;
+    display: block;
+    color: $black;
+
+    &:hover {
+      color: $orange;
+      text-decoration: underline;
+      border: 1px solid $black;
+      transform: scale(1.05);
+    }
+
+    h4 {
+      font-weight: 500;
+    }
+  }
+
+
+  &-subt {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  &-text {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,77 @@
+<!-- Header -->
+@include('_header.html')
+<!--End of the Header -->
+<div class="wrapper">
+
+  <main class="main">
+    <div class="contacts">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a class="breadcrumb-item" href="index.html">Главная</a>
+          <span class="breadcrumb-sep"> > </span>
+          <span class="breadcrumb-item active">Контакты</span>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="page-inner">
+          <div class="sidebar-box">
+            <!-- sidebar -->
+            @include('_sidebar.html')
+            <!-- end of the sidebar -->
+          </div>
+          <div class="contacts-content">
+            <h3>Контакты</h3>
+            <div class="contacts-info">
+              <div class="contacts-info__item">
+                <img src="images/Location.svg" alt="Location">
+                <div>
+                  <h4>
+                    Адрес
+                  </h4>
+                  <p class="contacts-info__item-text width">
+                    Российская федерация, 111141,
+                    г. Москва, Зеленый пр-т, 3/10.
+                  </p>
+                </div>
+              </div>
+              <div class="contacts-info__item">
+                <img src="images/phone.svg" alt="phone">
+                <div>
+                  <h4>
+                    Телефон
+                  </h4>
+                  <a href="tel:+79169367193" class="contacts__phone">+7(916)936-71-93</a>
+                  <p class="contacts-info__item-text">
+                    Мы работаем на удаленном доступе
+                  </p>
+                </div>
+              </div>
+              <div class="contacts-info__item">
+                <img src="images/mail.svg" alt="phone">
+                <div>
+                  <h4>
+                    Почта
+                  </h4>
+                  <a href="mailto:info@vibro-m.ru" class="contacts__mail">info@vibro-m.ru</a>
+                </div>
+              </div>
+            </div>
+            <p class="contacts__subtitle">Схема проезда:</p>
+            <div class="contacts-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5661323764393!2d37.767264216038015!3d55.74866709977827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53555223a4e39%3A0x5d60422f65a1820f!2z0JfQtdC70LXQvdGL0Lkg0L_RgC4sIDMvMTAsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMDUxMTg!5e0!3m2!1sru!2sua!4v1622370915593!5m2!1sru!2sua"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+  @include('_footer.html')
+  <!--End of the  footer-->
+</div>
+
+</body>
+
+</html>

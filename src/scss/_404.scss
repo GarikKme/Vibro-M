@@ -1,0 +1,38 @@
+.page404 {
+  padding: 100px 0;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+
+    img {
+      max-height: 675px;
+      margin-top: -50px;
+    }
+  }
+
+  &__content {
+    margin-top: 182px;
+  }
+
+  &__title {
+    font-size: 300px;
+    color: $white;
+    font-weight: 900;
+    text-shadow: $orange 2px 0px, $orange 1px 2px, $orange 2px -2px, $orange -2px -2px, $orange -2px 2px, $orange -2px 0px, $orange 2px -2px, $orange 2px -1px
+  }
+
+  &__subtitle {
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 835px;
+    margin: 50px 0 28px;
+  }
+
+  &__btn {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+}

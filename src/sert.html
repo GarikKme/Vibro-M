@@ -1,0 +1,65 @@
+<!-- Header -->
+@include('_header.html')
+<!--End of the Header -->
+<div class="wrapper">
+
+  <main class="main">
+    <div class="about tabs">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a class="breadcrumb-item" href="index.html">Главная</a>
+          <span class="breadcrumb-sep"> > </span>
+          <span class="breadcrumb-item active">О компании</span>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="page-inner">
+          <div class="sidebar-box">
+            <!-- sidebar -->
+            @include('_sidebar.html')
+            <!-- end of the sidebar -->
+          </div>
+          <div class="about-wrap">
+            <div class="about-btns">
+              <a class="about__btn" href="about.html">О компании</a>
+              <a class="about__btn" href="oport.html">Возможности</a>
+              <a class="about__btn" href="gallery.html">Фотогаллерея</a>
+              <a class="about__btn active" href="sert.html">Сертификаты</a>
+              <a class="about__btn" href="testimonials.html">Отзывы</a>
+            </div>
+            <div class="tabs__content">
+              <div class="about-sert" id="lightgallery">
+                <a href="images/about-sert.webp">
+                  <img src="images/about-sert.webp" alt="sertificate" />
+                </a>
+                <a href="images/about-sert2.webp">
+                  <img src="images/about-sert2.webp" alt="sertificate" />
+                </a>
+                <a href="images/about-sert3.webp">
+                  <img src="images/about-sert3.webp" alt="sertificate" />
+                </a>
+                <a href="images/about-sert4.webp">
+                  <img src="images/about-sert4.webp" alt="sertificate" />
+                </a>
+                <a href="images/sert5.webp">
+                  <img src="images/about-sert5.webp" alt="sertificate" />
+                </a>
+                <a href="images/sert6.webp">
+                  <img src="images/about-sert6.webp" alt="sertificate" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</main>
+<!-- footer -->
+@include('_footer.html')
+<!--End of the  footer-->
+</div>
+
+</body>
+
+</html>

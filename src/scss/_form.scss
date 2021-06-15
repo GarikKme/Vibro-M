@@ -1,0 +1,157 @@
+.form-check-input:checked+.check__box {
+  background-image: url(../images/checked.svg);
+  background-repeat: no-repeat;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+
+.check__box {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -20px;
+  top: -4px;
+  border-radius: 0.05em;
+  background-image: none;
+  background-image: url(../images/check.svg);
+}
+
+.form {
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 47px 30px 60px 30px;
+
+  &__title {
+    font-size: 24px;
+    color: $black;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    span {
+      color: $orange;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    color: $black;
+    max-width: 320px;
+    margin: 0 auto 30px;
+  }
+
+  &-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+
+    input {
+      border: 1px solid #BDBDBD;
+      border-radius: 4px;
+    }
+
+    i {
+      font-size: 25px;
+      color: #0d508b;
+      position: absolute;
+      top: 16px;
+      left: 10px;
+    }
+  }
+
+  &-control {
+    width: 369px;
+    max-width: 369px;
+    height: 56px;
+    background-color: #ffffff;
+    color: #767676;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 18px;
+    letter-spacing: 0.09em;
+
+  }
+
+  &__btn {
+    width: 387px;
+    max-width: 387px;
+    background: #F47F13;
+    border: 1px solid #F47F13;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    height: 56px;
+    line-height: 56px;
+    letter-spacing: 0.09em;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: none;
+      color: $orange;
+    }
+  }
+
+  &-check {
+    margin-top: 10px;
+    color: #ffffff;
+  }
+
+  &-check-label {
+    font-size: 14px;
+    width: 320px;
+    max-width: 320px;
+    text-align: left;
+    color: $black;
+    font-weight: 400;
+    position: relative;
+    padding-left: 16px;
+    letter-spacing: 0.01em;
+  }
+
+  &-group {
+    position: relative;
+  }
+}
+
+.form-check-input {
+  appearance: none;
+  position: absolute;
+}
+
+.modal-form {
+  .check__box {
+    left: -5px;
+    top: 0;
+  }
+}
+
+.box-modal {
+  text-align: right;
+  width: 588px;
+  height: 443px;
+  padding-top: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+
+  .close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: -30px;
+
+  }
+}
